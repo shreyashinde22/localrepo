@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Attendance</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <h1>Student Attendance</h1>
+    
+    <form id="attendanceForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="roll" placeholder="Roll Number" required>
+        <button type="submit">Submit Attendance</button>
+    </form>
+
+    <p id="status"></p>
+
+    <ul id="attendanceList"></ul>
+
+    <script src="student.js"></script>
+</body>
+</html>
